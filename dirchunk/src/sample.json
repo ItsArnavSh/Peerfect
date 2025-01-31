@@ -1,0 +1,66 @@
+{
+  "name": "Sample Files",
+  "version": 1,
+  "root": [
+    {
+      "name": "file1.txt",
+      "isFile": true,
+      "chunks": [
+        {
+          "index": 1,
+          "size": 1024,
+          "hash": "abc123xyz"
+        },
+        {
+          "index": 2,
+          "size": 1024,
+          "hash": "def456uvw"
+        }
+      ]
+    },
+    {
+      "name": "folder1",
+      "isFile": false,
+      "contents": [
+        {
+          "name": "file2.txt",
+          "isFile": true,
+          "chunks": [
+            {
+              "index": 1,
+              "size": 1024,
+              "hash": "ghi789rst"
+            },
+            {
+              "index": 2,
+              "size": 1024,
+              "hash": "jkl012uvw"
+            }
+          ]
+        },
+        {
+          "name": "folder2",
+          "isFile": false,
+          "contents": [
+            {
+              "name": "file3.txt",
+              "isFile": true,
+              "chunks": [
+                {
+                  "index": 1,
+                  "size": 1024,
+                  "hash": "mno345xyz"
+                },
+                {
+                  "index": 2,
+                  "size": 1024,
+                  "hash": "pqr678rst"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
