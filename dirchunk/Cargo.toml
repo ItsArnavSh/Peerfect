@@ -3,6 +3,10 @@ name = "dirchunk"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "filechunk"
+crate-type = ["cdylib"]
+
 [dependencies]
 sha2 = "0.10"
 walkdir = "2"
