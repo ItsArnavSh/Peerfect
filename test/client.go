@@ -21,9 +21,9 @@ func main() {
 	defer conn.Close()
 
 	request := ChunkRequest{
-		FilePath:    "testfile.bin",
+		FilePath:    "",
 		ChunkNum:    1,
-		ExpectedSHA: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", // Example SHA256
+		ExpectedSHA: "", // Example SHA256
 	}
 
 	requestJSON, _ := json.Marshal(request)
